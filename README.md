@@ -1,16 +1,54 @@
-# smart_home
+# Homine – Smart Home App
 
-A new Flutter project.
+A modern and minimalistic smart home mobile app built with Flutter.
 
-## Getting Started
+![Homine Smart Home App Preview](assets/screenshots/preview.png)
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 🚀 Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- ✨ Futuristic UI with Material 3
+- 🎯 Onboarding experience with smooth indicators
+- 🏠 Pages for Home, Scenes, Security, and Profile
+- 🔠 Stylish Urbanist font for elegant readability
+- 📱 Responsive design for various screen sizes
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 🖼️ Screenshots
+
+| Onboarding | Home Page | Security |
+|-----------|-----------|----------|
+| ![Onboarding](assets/screenshots/onboarding1.png) | ![Home](assets/screenshots/home.png) | ![Security](assets/screenshots/security.png) |
+
+---
+
+## 🛠️ Tech Stack
+
+- **Flutter** & **Dart**
+- **Material 3** Design System
+- **Google Fonts** – Urbanist
+- **PageView & SmoothPageIndicator**
+- **Custom Navigation Routing**
+
+---
+
+## 📦 Installation
+
+1. Clone this repo  
+   `git clone https://github.com/yourusername/homine-smart-home.git`
+
+2. Navigate into the project folder  
+   `cd homine-smart-home`
+
+3. Install dependencies  
+   `flutter pub get`
+
+4. Run the app  
+   `flutter run`
+
+---
+
+## 💡 Project Structure
+
