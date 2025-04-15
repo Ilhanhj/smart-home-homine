@@ -73,6 +73,7 @@ flutter:
   assets:
     - lib/icons/
     - assets/
+    - assets/screenshots
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in
@@ -84,7 +85,7 @@ flutter:
       fonts:
         - asset: assets/fonts/Urbanist-Regular.ttf
         - asset: assets/fonts/Urbanist-Bold.ttf
-          weight: 700 
+          weight: 700
 
   # To add assets to your application, add an assets section, like this:
   # assets:
