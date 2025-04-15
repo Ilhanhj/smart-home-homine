@@ -18,13 +18,14 @@ A modern and minimalistic smart home mobile app built with Flutter.
 
 ## 🖼️ Screenshots
 
-| Onboarding | Onboarding | Home Page | 
-|-----------|-----------|-----------|-------------|
+| Onboarding 1 | Onboarding 2 | Home Page |
+|--------------|--------------|-----------|
 | <img src="assets/screenshots/onboarding1.png" width="250"/> | <img src="assets/screenshots/onboarding2.png" width="250"/> | <img src="assets/screenshots/smart-home.png" width="250"/> |
 
 | Security Page | Profile Page | Scenes Page |
 |---------------|--------------|--------------|
 | <img src="assets/screenshots/security.png" width="250"/> | <img src="assets/screenshots/profile.png" width="250"/> | <img src="assets/screenshots/scenes.png" width="250"/> |
+
 
 
 
