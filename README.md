@@ -2,7 +2,7 @@
 
 A modern and minimalistic smart home mobile app built with Flutter.
 
-![Homine Smart Home App Preview](assets/screenshots/preview.png)
+![Homine Smart Home App Preview](assets/logo.png)
 
 ---
 
