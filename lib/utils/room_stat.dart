@@ -9,7 +9,7 @@ class RoomStat extends StatelessWidget {
       height: 160,
       decoration: BoxDecoration(
         image: const DecorationImage(
-          image: AssetImage('assets/bedroom.png'),
+          image: AssetImage('assets/bedroom.webp'),
           fit: BoxFit.cover,
         ),
         color: const Color(0xff0e5250),

@@ -114,38 +114,36 @@ class RoomBox extends StatelessWidget {
                   ),
                   Padding(
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
-                    child: Row(
-                      children: [
-                        const SizedBox(width: 10),
-                        Material(
-                          color: const Color(0xff0d0d0d),
-                          shape: const CircleBorder(),
-                          child: InkWell(
-                            borderRadius: BorderRadius.circular(100),
-                            // onTap: () {
-                            //   // Navigasi ke halaman detail
-                            //   Navigator.push(
-                            //     context,
-                            //     MaterialPageRoute(
-                            //       builder:
-                            //           (context) => CameraPage(
-                            //             roomName: roomName,
-                            //             imagePath: imagePath,
-                            //           ),
-                            //     ),
-                            //   );
-                            // },
-                            child: Padding(
-                              padding: const EdgeInsets.all(8),
-                              child: const Icon(
-                                Icons.open_in_full_outlined,
-                                size: 22,
-                                color: Colors.lightBlueAccent,
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Material(
+                        color: const Color(0xff0d0d0d),
+                        shape: const CircleBorder(),
+                        child: InkWell(
+                          customBorder: const CircleBorder(),
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder:
+                                    (context) => CameraPage(
+                                      roomName:
+                                          roomName, // pastikan ini paramnya ada
+                                      imagePath: imagePath, // ini juga
+                                    ),
                               ),
+                            );
+                          },
+                          child: const Padding(
+                            padding: EdgeInsets.all(12),
+                            child: Icon(
+                              Icons.open_in_full_outlined,
+                              size: 24,
+                              color: Colors.lightBlueAccent,
                             ),
                           ),
                         ),
-                      ],
+                      ),
                     ),
                   ),
                 ],

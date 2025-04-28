@@ -12,12 +12,17 @@ class SecurityPage extends StatefulWidget {
 class _SecurityPageState extends State<SecurityPage> {
   // [roomName, devices, imagePath,  expandedLink]
   List myRoom = [
-    ["Living Room", "4 devices active", "assets/livingroom.png", "/livingroom"],
-    ["Kitchen", "3 devices active", "assets/kitchen.png", "/kitchen"],
-    ["Bedroom", "2 devices active", "assets/bedroom.png", "/bedroom"],
-    ["Library", "3 devices active", "assets/library.png", "/library"],
-    ["Garage", "3 devices active", "assets/garage-2.png", "/garage"],
-    ["Theater", "3 devices active", "assets/theater.png", "/theater"],
+    [
+      "Living Room",
+      "4 devices active",
+      "assets/livingroom.webp",
+      "/livingroom",
+    ],
+    ["Kitchen", "3 devices active", "assets/kitchen.webp", "/kitchen"],
+    ["Bedroom", "2 devices active", "assets/bedroom.webp", "/bedroom"],
+    ["Library", "3 devices active", "assets/library.webp", "/library"],
+    ["Garage", "3 devices active", "assets/garage.webp", "/garage"],
+    ["Theater", "3 devices active", "assets/theater.webp", "/theater"],
   ];
 
   @override
@@ -30,7 +35,7 @@ class _SecurityPageState extends State<SecurityPage> {
             'S E C U R I T Y ',
             style: TextStyle(
               color: Color(0xff0e5250),
-              fontSize: 24, 
+              fontSize: 24,
               fontWeight: FontWeight.bold,
             ),
           ),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
 class CameraPage extends StatelessWidget {
-  // final String roomName;
-  // final String imagePath;
+  final String roomName;
+  final String imagePath;
 
-  // const CameraPage({
-  //   super.key,
-  //   required this.roomName,
-  //   required this.imagePath,
-  // });
+  const CameraPage({
+    super.key,
+    required this.roomName,
+    required this.imagePath,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +19,7 @@ class CameraPage extends StatelessWidget {
         elevation: 0,
         iconTheme: const IconThemeData(color: Colors.white),
         title: Text(
-          'roomName'.toUpperCase(),
+          roomName.toUpperCase(),
           style: const TextStyle(
             color: Colors.white,
             fontSize: 22,
@@ -49,9 +49,7 @@ class CameraPage extends StatelessWidget {
       body: Stack(
         children: [
           // Background Image
-          Positioned.fill(
-            child: Image.asset('assets/garage.png', fit: BoxFit.cover),
-          ),
+          Positioned.fill(child: Image.asset(imagePath, fit: BoxFit.cover)),
 
           // Dark overlay biar teks & icon keliatan
           Container(color: Colors.black.withOpacity(0.2)),
