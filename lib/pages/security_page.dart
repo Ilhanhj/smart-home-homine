@@ -17,7 +17,7 @@ class _SecurityPageState extends State<SecurityPage> {
     ["Bedroom", "2 devices active", "assets/bedroom.png", "/bedroom"],
     ["Library", "3 devices active", "assets/library.png", "/library"],
     ["Garage", "3 devices active", "assets/garage-2.png", "/garage"],
-    ["Theater", "3 devices active", "assets/theater.png", "/garage"],
+    ["Theater", "3 devices active", "assets/theater.png", "/theater"],
   ];
 
   @override
@@ -30,7 +30,7 @@ class _SecurityPageState extends State<SecurityPage> {
             'S E C U R I T Y ',
             style: TextStyle(
               color: Color(0xff0e5250),
-              fontSize: 24,
+              fontSize: 24, 
               fontWeight: FontWeight.bold,
             ),
           ),

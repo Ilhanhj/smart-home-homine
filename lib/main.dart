@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home/pages/camera_page.dart';
 import 'package:smart_home/pages/security_page.dart';
 import 'pages/scenes_page.dart';
 import 'pages/home_page.dart';
 import 'pages/profile_page.dart';
+import 'package:smart_home/pages/camera_page.dart';
 import 'pages/onboarding/onboarding_page.dart';
 import 'package:google_fonts/google_fonts.dart';
 
@@ -24,7 +26,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Rute awal aplikasi
-      initialRoute: '/',
+      initialRoute: '/camera',
 
       // Daftar semua halaman
       routes: {
@@ -33,6 +35,7 @@ class MyApp extends StatelessWidget {
         '/scenes': (context) => const ScenesPage(),
         '/security': (context) => const SecurityPage(),
         '/profile': (context) => const ProfilePage(),
+        '/camera': (context) => CameraPage(),
       },
     );
   }

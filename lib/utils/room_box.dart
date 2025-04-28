@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smart_home/pages/camera_page.dart';
 
 class RoomBox extends StatelessWidget {
   // [roomName, devices, imagePath,  expandedLink]
@@ -115,34 +116,25 @@ class RoomBox extends StatelessWidget {
                     padding: const EdgeInsets.fromLTRB(0, 0, 0, 20),
                     child: Row(
                       children: [
-                        Material(
-                          color: const Color(0xff0d0d0d),
-                          shape: const CircleBorder(),
-                          child: InkWell(
-                            borderRadius: BorderRadius.circular(100),
-                            onTap: () {
-                              // do something
-                            },
-                            child: Padding(
-                              padding: const EdgeInsets.all(8),
-                              child: const Icon(
-                                Icons.push_pin_outlined,
-                                size: 22,
-                                color: Colors.lightBlueAccent,
-                              ),
-                            ),
-                          ),
-                        ),
                         const SizedBox(width: 10),
                         Material(
                           color: const Color(0xff0d0d0d),
                           shape: const CircleBorder(),
                           child: InkWell(
                             borderRadius: BorderRadius.circular(100),
-                            onTap: () {
-                              // do something
-                              Navigator.pushNamed(context, expandedLink);
-                            },
+                            // onTap: () {
+                            //   // Navigasi ke halaman detail
+                            //   Navigator.push(
+                            //     context,
+                            //     MaterialPageRoute(
+                            //       builder:
+                            //           (context) => CameraPage(
+                            //             roomName: roomName,
+                            //             imagePath: imagePath,
+                            //           ),
+                            //     ),
+                            //   );
+                            // },
                             child: Padding(
                               padding: const EdgeInsets.all(8),
                               child: const Icon(
