@@ -20,9 +20,9 @@ class RoomBox extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: EdgeInsets.fromLTRB(
-        25,
+        5,
         0,
-        25,
+        5,
         0,
       ), // Sesuaikan padding sesuai kebutuhan(0),
       child: Container(

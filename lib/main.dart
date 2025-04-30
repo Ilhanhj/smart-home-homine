@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
       ),
 
       // Rute awal aplikasi
-      initialRoute: '/',
+      initialRoute: '/home',
 
       // Daftar semua halaman
       routes: {

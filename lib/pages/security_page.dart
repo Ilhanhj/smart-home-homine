@@ -53,21 +53,24 @@ class _SecurityPageState extends State<SecurityPage> {
             AddButton(),
             const SizedBox(height: 10), // jarak bawah tombol
             // Room Box
-            Wrap(
-              spacing: 10,
-              runSpacing: 10,
-              children: List.generate(myRoom.length, (index) {
-                return SizedBox(
-                  width: MediaQuery.of(context).size.width,
-                  // [roomName, devices, imagePath,  expandedLink]
-                  child: RoomBox(
-                    roomName: myRoom[index][0],
-                    devices: myRoom[index][1],
-                    imagePath: myRoom[index][2],
-                    expandedLink: myRoom[index][3],
-                  ),
-                );
-              }),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 20),
+              child: Wrap(
+                spacing: 10,
+                runSpacing: 10,
+                children: List.generate(myRoom.length, (index) {
+                  return SizedBox(
+                    width: MediaQuery.of(context).size.width,
+                    // [roomName, devices, imagePath,  expandedLink]
+                    child: RoomBox(
+                      roomName: myRoom[index][0],
+                      devices: myRoom[index][1],
+                      imagePath: myRoom[index][2],
+                      expandedLink: myRoom[index][3],
+                    ),
+                  );
+                }),
+              ),
             ),
           ],
         ),

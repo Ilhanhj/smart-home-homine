@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:smart_home/utils/smart_device_box.dart';
 import 'package:smart_home/utils/room_stat.dart';
+import 'package:smart_home/utils/room_box.dart';
 import 'package:smart_home/utils/custom_appbar.dart';
 
 class SmartHomePage extends StatefulWidget {
@@ -26,6 +27,20 @@ class _SmartHomePageState extends State<SmartHomePage> {
     ["Smart Robot", "lib/icons/robot.png", true],
   ];
 
+  List myRoom = [
+    [
+      "Living Room",
+      "4 devices active",
+      "assets/livingroom.webp",
+      "/livingroom",
+    ],
+    ["Kitchen", "3 devices active", "assets/kitchen.webp", "/kitchen"],
+    ["Bedroom", "2 devices active", "assets/bedroom.webp", "/bedroom"],
+    ["Library", "3 devices active", "assets/library.webp", "/library"],
+    ["Garage", "3 devices active", "assets/garage.webp", "/garage"],
+    ["Theater", "3 devices active", "assets/theater.webp", "/theater"],
+  ];
+
   void powerSwitchChanged(bool value, int index) {
     setState(() {
       mySmartDevices[index][2] = value;
@@ -46,7 +61,27 @@ class _SmartHomePageState extends State<SmartHomePage> {
             const SizedBox(height: 20),
 
             // Room Stat
-            RoomStat(),
+            // RoomStat(),
+            SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              padding: const EdgeInsets.symmetric(horizontal: 0),
+              child: Row(
+                children: List.generate(myRoom.length, (index) {
+                  return Padding(
+                    padding: const EdgeInsets.only(right: 0),
+                    child: SizedBox(
+                      width: 450, // Atur lebar card sesuai kebutuhan
+                      child: RoomBox(
+                        roomName: myRoom[index][0],
+                        devices: myRoom[index][1],
+                        imagePath: myRoom[index][2],
+                        expandedLink: myRoom[index][3],
+                      ),
+                    ),
+                  );
+                }),
+              ),
+            ),
 
             const SizedBox(height: 20),
 
