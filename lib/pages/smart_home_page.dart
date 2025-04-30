@@ -70,7 +70,7 @@ class _SmartHomePageState extends State<SmartHomePage> {
                   return Padding(
                     padding: const EdgeInsets.only(right: 0),
                     child: SizedBox(
-                      width: 450, // Atur lebar card sesuai kebutuhan
+                      width: 330, // Atur lebar card sesuai kebutuhan
                       child: RoomBox(
                         roomName: myRoom[index][0],
                         devices: myRoom[index][1],

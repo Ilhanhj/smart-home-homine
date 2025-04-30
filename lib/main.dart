@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:smart_home/pages/security_page.dart';
-import 'pages/scenes_page.dart';
 import 'pages/home_page.dart';
-import 'pages/profile_page.dart';
 import 'pages/onboarding/onboarding_page.dart';
 
 void main() {
@@ -23,15 +20,12 @@ class MyApp extends StatelessWidget {
       ),
 
       // Rute awal aplikasi
-      initialRoute: '/home',
+      initialRoute: '/',
 
       // Daftar semua halaman
       routes: {
         '/': (context) => const OnboardingPage(),
         '/home': (context) => const HomePage(),
-        '/scenes': (context) => const ScenesPage(),
-        '/security': (context) => const SecurityPage(),
-        '/profile': (context) => const ProfilePage(),
       },
     );
   }
